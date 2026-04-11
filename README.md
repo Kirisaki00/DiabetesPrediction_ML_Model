@@ -1,131 +1,107 @@
-🩺 DiabetesPrediction_ML_Model
+# 🩺 Diabetes Prediction ML Model
 
-A machine learning–based classification system that predicts the likelihood of diabetes using medical diagnostic data. This project demonstrates a complete ML pipeline, including data preprocessing, model training, evaluation, and model persistence.
+## 📌 Overview
+This project implements a **machine learning classification system** to predict the likelihood of diabetes using medical diagnostic data.  
 
-📌 Project Overview
+It demonstrates a complete **end-to-end ML workflow**, including:
+- Data preprocessing  
+- Model training  
+- Evaluation  
+- Model persistence  
 
-Diabetes is a chronic disease that requires early detection for effective management. This project uses supervised machine learning techniques to classify whether a patient is diabetic based on key medical attributes.
+---
 
-Key highlights:
+## 🎯 Objective
+To classify whether a patient is diabetic or not based on key medical features, enabling early detection and analysis.
 
-Real-world medical dataset
+---
 
-End-to-end ML workflow
+## 📊 Dataset Information
+The dataset contains medical predictor variables and a target variable.
 
-Trained and saved classification model
+### 🔹 Features
+- Pregnancies  
+- Glucose  
+- BloodPressure  
+- SkinThickness  
+- Insulin  
+- BMI  
+- DiabetesPedigreeFunction  
+- Age  
 
-Beginner-friendly and academic-ready
+### 🎯 Target
+- **Outcome**  
+  - 1 → Diabetic  
+  - 0 → Non-diabetic  
 
-📂 Repository Structure
-DiabetesPrediction_ML_Model/
-│
-├── diabetes.csv                 # Dataset used for training and testing
-├── DiabetesPrediction_ML_Model.ipynb               # Jupyter Notebook (EDA, training, evaluation)
-├── classification_model.pkl     # Saved trained ML model
-├── README.md                    # Project documentation
+---
 
-📊 Dataset Information
+## 🛠️ Technologies Used
+- Python 🐍  
+- NumPy – Numerical operations  
+- Pandas – Data manipulation  
+- Scikit-learn – Machine learning  
+- Pickle – Model serialization  
+- Jupyter Notebook  
 
-The dataset contains several medical predictor variables and one target variable.
+---
 
-🔹 Features
+## 📂 Files Included
+- 📊 **diabetes.csv** – Dataset used for training and testing  
+- 📓 **DiabetesPrediction_ML_Model.ipynb** – Notebook with EDA, training, and evaluation  
+- 💾 **classification_model.pkl** – Saved trained model  
+- 📄 **README.md** – Project documentation  
 
-Pregnancies
+---
 
-Glucose
+## 🧠 Machine Learning Pipeline
+- Data loading and exploration  
+- Handling missing and invalid values  
+- Data splitting (train/test)  
+- Model training (classification)  
+- Model evaluation using metrics  
+- Saving the trained model for reuse  
 
-BloodPressure
+---
 
-SkinThickness
+## 📈 Results
+- Achieves reliable predictive accuracy on test data  
+- Demonstrates effective use of classification algorithms  
+- Suitable for learning and academic purposes  
 
-Insulin
+---
 
-BMI
-
-DiabetesPedigreeFunction
-
-Age
-
-🎯 Target Variable
-
-Outcome
-
-1 → Diabetic
-
-0 → Non-diabetic
-
-⚙️ Technologies & Tools
-
-Programming Language: Python
-
-Libraries: NumPy, Pandas, Scikit-learn, Pickle
-
-Environment: Jupyter Notebook
-
-🧠 Machine Learning Pipeline
-
-Load and explore the dataset
-
-Handle missing and invalid values
-
-Split data into training and test sets
-
-Train a classification model
-
-Evaluate performance using accuracy and metrics
-
-Save the trained model for reuse
-
-▶️ How to Run the Project
-1️⃣ Clone the Repository
-git clone https://github.com/Kirisaki00/DiabetesPrediction_ML_Model.git
-cd DiabetesDataModel
-
-2️⃣ Install Required Libraries
-pip install numpy pandas scikit-learn
-
-3️⃣ Run the Notebook
-
-Open Untitled.ipynb in Jupyter Notebook or JupyterLab and execute the cells in order.
-
-💾 Using the Trained Model
-
+## 💾 Model Usage
 The trained model is saved as:
-
 classification_model.pkl
 
+It can be loaded and used for predictions in Python using `pickle`.
 
-Load and use it in Python as follows:
+---
 
-import pickle
+## 🎯 Purpose
+This project is built to:
+- Understand machine learning classification  
+- Work with real-world medical datasets  
+- Build an end-to-end ML pipeline  
+- Practice model deployment concepts  
 
-with open("classification_model.pkl", "rb") as file:
-    model = pickle.load(file)
+---
 
+## 🚀 Future Improvements
+- Compare multiple ML models  
+- Apply hyperparameter tuning  
+- Improve feature engineering  
+- Deploy as a web app (Flask / Streamlit)  
+- Add dashboards and visualizations  
 
-You can then pass new patient data to the model for prediction.
+---
 
-📈 Results
+## ⚠️ Disclaimer
+This project is for educational purposes only and should not be used for real medical diagnosis.
 
-The model achieves good predictive accuracy on test data
+---
 
-Demonstrates effective use of classification algorithms
-
-Suitable for learning, experimentation, and academic evaluation
-
-🚀 Future Enhancements
-
-Add multiple ML models for comparison
-
-Apply hyperparameter tuning
-
-Perform advanced feature scaling
-
-Deploy as a web application (Flask / Streamlit)
-
-Add visual dashboards and reports
-
-🧑‍🎓 Author
-
-Anupam Singh (Kirisaki)
-Machine Learning Student Project
+## ✨ Author
+**Anupam Singh (Kirisaki)**  
+Machine Learning Student  
